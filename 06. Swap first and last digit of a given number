@@ -1,0 +1,28 @@
+//swap first and last digit of a given number
+class swap {
+    public static void main(String[] args){
+        int num = 1234; // Example number
+        int lastDigit = num % 10; // Get last digit
+        int firstDigit = 0; // Variable to store first digit
+        int digits = 0; // Variable to count digits
+
+        // Find the first digit and count the number of digits
+        int num2 = num;
+        while (num2 >= 10) {
+            num2 = num2 / 10;
+            digits++;
+        }
+        firstDigit = num2; // First digit is now stored
+
+        // Calculate the new number
+        int newNum = lastDigit; // Start with last digit
+        newNum *= Math.pow(10, digits); // Add zeros for the first digit's place
+        newNum += num % (int) Math.pow(10, digits); // Add the middle part of the number
+        newNum = newNum * 10 + firstDigit; // Add the first digit at the end
+
+        System.out.println("Number after swapping first and last digit: " + newNum);
+
+    
+        }
+
+    }
