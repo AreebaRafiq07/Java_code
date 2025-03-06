@@ -1,0 +1,16 @@
+class Main{ //main class
+	
+	//data + operation
+	public static void main(String[] args){
+			System.out.println(5 & 6); 
+            System.out.println(5 | 6);  
+            System.out.println(15 & 16); 
+            System.out.println(15 | 16); 
+            System.out.println(15 << 1 );   
+            System.out.println(15 << 3 ); 
+            System.out.println(20 << 3 ); 
+            System.out.println(15 >> 3 );
+            System.out.println(15 >> 4 ); 
+            System.out.println(20 >> 3 );                                                    
+	}
+}
