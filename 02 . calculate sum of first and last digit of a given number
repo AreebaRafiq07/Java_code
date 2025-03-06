@@ -1,0 +1,11 @@
+//calculate sum of first and last digit of a given number
+class First {
+    public static void main(String[] args){
+        int num = 2825;
+        int num2 = num ;
+        int x = num2 % 10;
+        while(num2>=10){
+                num2= num2/10;}
+        System.out.println(num2+x);     
+        }
+    }
